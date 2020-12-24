@@ -1,0 +1,7 @@
+# Supported Currencies
+enum Currency {
+  BRL
+  CHF
+  SWK
+  USD
+}

@@ -1,4 +1,4 @@
-package com.titanstate.learn.graphql.resolver;
+package com.titanstate.learn.graphql.resolver.bank.query;
 
 import com.titanstate.learn.graphql.domain.bank.BankAccount;
 import com.titanstate.learn.graphql.domain.bank.Client;
@@ -17,11 +17,6 @@ public class BankAccountResolver implements GraphQLQueryResolver {
 
     return BankAccount.builder()
         .id(id)
-        .client(Client.builder()
-            .id(UUID.randomUUID())
-            .firstName("Camila")
-            .lastName("Paschini")
-            .build())
         .currency(Currency.SWK)
         .build();
   }
